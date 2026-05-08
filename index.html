@@ -119,17 +119,25 @@
       padding: 2px 8px;
       border-radius: 4px;
       font-size: 0.9em;
+      pointer-events: none;
     }
     
-    pre, code {
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
+    pre, code, pre *, code * {
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      -webkit-touch-callout: none !important;
     }
     
-    pre::selection, code::selection {
-      background: transparent;
+    pre::selection, code::selection,
+    pre *::selection, code *::selection {
+      background: transparent !important;
+      color: inherit !important;
+    }
+    
+    .glass-card pre {
+      pointer-events: none;
     }
   </style>
 </head>
