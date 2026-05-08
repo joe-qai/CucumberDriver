@@ -190,8 +190,8 @@
       </p>
       
       <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <a href="#quickstart" class="btn-primary px-8 py-4 rounded-xl font-bold text-lg text-gray-900">
-          快速入门
+        <a href="#features" class="btn-primary px-8 py-4 rounded-xl font-bold text-lg text-gray-900">
+          查看功能
         </a>
         <a href="https://github.com/joe-qai/CucumberBDD" target="_blank" class="btn-secondary px-8 py-4 rounded-xl font-bold text-lg">
           <i class="fa fa-github mr-2"></i>查看源码
@@ -302,68 +302,6 @@
           <p class="text-gray-400">
             自动处理页面加载延迟，智能等待元素出现，减少测试不稳定因素。
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Start Section -->
-  <section id="quickstart" class="py-24 relative">
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#00f5d4]/5 to-transparent"></div>
-    
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">快速开始</h2>
-        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-          只需三步，即可开始编写自动化测试
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Step 1 -->
-        <div class="relative">
-          <div class="glass-card rounded-2xl p-8 h-full">
-            <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-gradient-to-br from-[#00f5d4] to-[#4cc9f0] flex items-center justify-center text-gray-900 font-bold">1</div>
-            <h3 class="text-xl font-semibold text-white mb-4 mt-4">添加依赖</h3>
-            <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm overflow-x-auto">
-              <pre class="text-gray-300"><code>&lt;dependency&gt;
-    &lt;groupId&gt;com.cucumber&lt;/groupId&gt;
-    &lt;artifactId&gt;cucumber-java&lt;/artifactId&gt;
-    &lt;version&gt;7.0.0&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Step 2 -->
-        <div class="relative">
-          <div class="glass-card rounded-2xl p-8 h-full">
-            <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-gradient-to-br from-[#4cc9f0] to-[#f72585] flex items-center justify-center text-gray-900 font-bold">2</div>
-            <h3 class="text-xl font-semibold text-white mb-4 mt-4">编写 Feature</h3>
-            <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm overflow-x-auto">
-              <pre class="text-gray-300"><code>功能: 用户登录
-场景: 成功登录
-  假如 打开登录页面
-  当 输入用户名 "admin"
-  并且 输入密码 "123456"
-  那么 显示欢迎页面</code></pre>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Step 3 -->
-        <div class="relative">
-          <div class="glass-card rounded-2xl p-8 h-full">
-            <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-gradient-to-br from-[#f72585] to-[#00f5d4] flex items-center justify-center text-gray-900 font-bold">3</div>
-            <h3 class="text-xl font-semibold text-white mb-4 mt-4">运行测试</h3>
-            <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm overflow-x-auto">
-              <pre class="text-gray-300"><code># Maven 运行
-mvn test
-
-# 指定标签运行
-mvn test -Dcucumber.filter.tags="@Smoke"</code></pre>
-            </div>
-          </div>
         </div>
       </div>
     </div>
